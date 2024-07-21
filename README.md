@@ -5,7 +5,7 @@ Simple weather app for small raspberry pi display, based on pygame and OpenWeath
 Requirements:
 -Raspberry Pi
 -LCD gpio display
--Python3
+-Python3.10
 
 
 Instruction
