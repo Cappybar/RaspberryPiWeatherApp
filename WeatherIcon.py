@@ -19,19 +19,15 @@ class WeatherIcon():
             match weather_json["weather"][0]["main"]:
                 case "Clear":
                     self.icons_str = "assets//sun//"
-                    self.loadIcons()
                 case "Clouds":
                     self.icons_str = "assets//clouds//"
-                    self.loadIcons()
                 case "Rain":
                     self.icons_str = "assets//rain//"
-                    self.loadIcons()
                 case "Thunderstorm":
                     self.icons_str = "assets//thunder//"
-                    self.loadIcons()
                 case _:
                     self.icons_str = "assets//unk//"
-                    self.loadIcons()
+            self.loadIcons()
         except Exception as e:
             print(weather_json["cod"])
             match str(weather_json["cod"]):
