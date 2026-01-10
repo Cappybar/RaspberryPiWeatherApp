@@ -31,7 +31,7 @@ class WeatherIcon():
                 case "Drizzle":
                     self.icons_str = "assets//rain//"
                 case "Mist":
-                    self.icons_str = "assets//rain//"
+                    self.icons_str = "assets//mist//"
                 case "Snow":
                     self.icons_str = "assets//snow//"
                 case _:
@@ -57,3 +57,4 @@ class WeatherIcon():
             self.icon_counter = 0
         self.pygame_icon = pygame.image.load(self.icons_list[self.icon_counter])
         self.icon_counter += 1
+
